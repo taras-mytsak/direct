@@ -9,5 +9,4 @@ $cats = createTree($cats);
 
 echo '<pre>';
 print_r($cats);
-
 ?>
