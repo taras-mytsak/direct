@@ -23,10 +23,8 @@ function createTree($arr)
     foreach ($arr as $key => $item) {
         $parents_arr[$item['parent_id']][$item['id']] = $item;
     }
-
     $treeElem = $parents_arr[0];
     generateElemTree($treeElem, $parents_arr);
-
     //return $parents_arr;
     return $treeElem;
 }
@@ -56,5 +54,4 @@ function renderTemplate($patch, $arr)
     }
     return $output;
 }
-
 ?>
